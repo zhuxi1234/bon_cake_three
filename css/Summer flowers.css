@@ -1,0 +1,186 @@
+body,p,ul,ol,dl,dd,h1,h2,h3,h4,h5,h6,td,input,select,textarea,figure{
+	margin:0;
+	padding:0;
+}
+body{
+	font-family:"微软雅黑",Arial;
+	background: white;
+}
+a{
+	text-decoration:none;
+	color:black;
+}
+li{
+	list-style:none;
+}
+img{
+	border:none;
+}	
+html,body{
+	/*display:flex;*/
+	width:100%;
+	height:auto;
+}
+
+/*banner部分*/
+.banner{
+	width:100%;
+	overflow:hidden;
+	margin-top:92px;
+	position:relative;
+}
+.banner img{
+	width:1346px;
+}
+.banner .left-go{
+	width:20px;
+	height:37.14px;
+	position:absolute;
+	left: 30px;
+    top: 320px;
+	}
+.banner .right-go{
+	width:20px;
+	height:37.14px;
+	position:absolute;
+	right:30px;
+	top:320px;
+	}
+
+/"section部分"/
+section .section_one{
+	width:100%;
+	overflow:hidden;
+}
+section .innersection{
+	width:1173px;
+	margin:0 auto;
+	margin-top:70px;
+}
+section .section_one .flower_boy{
+	display:inline-block;
+	width:771px;
+	height:730px;
+	float:left;
+}
+section .section_one .summer_more{
+	float:right;
+	width:370px;
+	height:370px;
+	border:1px solid #c9c9c9;
+	text-align:center;
+	display:inline-block;
+	}
+section .section_one .summer_more h2{
+	margin-top: 111px;
+    font-size: 24px;
+    color: #000000;
+}
+section .section_one .summer_more p{
+	margin-top: 16px;
+    font-size: 20px;
+    color: #999999
+}
+section .section_one .summer_more input{
+	width: 103px;
+    height: 34px;
+    line-height: 34px;
+    margin-top: 34px;
+    font-size: 18px;
+    color: #ffffff;
+    background-color: #333333;
+    border:none;
+    cursor:pointer;
+}
+section .section_one .summer_more img{
+	display:inline-block;
+    width: 14px;
+    margin: 0 auto;
+    margin-top: 10px;
+    padding: 12px;
+    cursor: pointer;
+}
+section .section_one .special_offer{
+	float:right;
+	display:inline-block;
+	width:371px;
+	margin-top:100px;
+	text-align:center;
+}
+section .section_one .special_offer h2{
+	font-size: 25px;
+	font-weight:500;
+}
+section .section_one .special_offer .give{
+    padding-top: 15px;
+    font-size: 17px;
+}
+section .section_one .special_offer .date{
+	padding-top:10px;
+    font-size: 15px;
+    line-height:30px;
+}
+section .section_two{
+	width:100%;
+	overflow:hidden;
+	margin:0 auto;
+	padding-top:40px;
+	padding-bottom:25px;
+}
+section .section_two .product_show{
+	padding-top:18px;
+}
+section .product_show li{
+	font-family: "Microsoft YaHei", PingFangSC-Regular, sans-serif;
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+	width:267px;
+	height:380px;
+	border:1px solid lightgray;
+	cursor: pointer;
+    transition:all 0.6s;
+    overflow:hidden;
+    float:left;
+    margin-right:30px;
+    margin-bottom:20px;
+}
+section .product_show li:hover{
+	transform:Scale(1.05);
+}
+section .product_show li img{
+	width:265px;
+	height:265px;
+}
+section .product_show .uls li:nth-child(4n){
+	margin-right:0px;
+}
+
+section .product_show li p{
+	font-size: 16px;
+	margin-left:21px;
+	line-height:10px;
+}
+section .product_show li .red{
+	color:#666666;
+	font-size:14px;
+	margin-top:-2px;
+}
+section .product_show li .buy{
+	display:inline-block;
+	width:72px;
+	height:26px;
+	background-color:#333333;
+	color:white;
+	font-size:17px;
+	text-align:center;
+	float:right;
+	margin-right:20px;
+}
+section .product_show li .buy img{
+	width:18px;
+	height:16px;
+	margin-right:5px;
+}
+
+

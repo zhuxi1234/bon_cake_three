@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/shop.css">
+		<link rel="stylesheet" type="text/css" href="css/common.css">
+	</head>
+	<body>
+<!--<nav>部分-->
+<nav> 
+		  <div class="isNav">
+			<a href="#"><img src="img/LOGO-1.png" id="logo"/></a>
+			<ul class="ul1">
+				<li><a href="#">首页<p>HOME</p></a></li>
+				<li><a href="#">所有商品<p>PRODUCTS</p></a></li>
+				<li><a href="#">生如夏花<p>SUMMER FLOWERS</p></a></li>
+				<li><a href="#">星空系列<p>STARRY SKY</p></a></li>
+				<li><a href="#">双层定制<p>CUSTOMIZED PRO</p></a></li>
+			</ul>
+			<div class="nav_right">
+				<img class="lineclass" src="img/cut-line.png"/>
+				<a href="#" class="loginclass"><img src="img/login-icon.png"/><span>登录</span></a>
+				<a href="#" class="registerclass"><img src="img/register-icon.png"/><span>注册</span></a>
+				<div class="ciTy">
+					<span id="cityM">北京市<img src="img/pull-down.png"></span>
+					<div class="select">
+						<ul id="focus">
+							<li><img src="img/1.png" style="width=20px" height="20px"><a href="#">北京市</a></li>
+							<li><img src="img/2.png" style="width=13px" height="13px"><a href="#">上海市</a></li>
+							<li><img src="img/3.png" style="width=20px" height="20px"><a href="#">天津市</a></li>
+							<li><img src="img/4.png" style="width=20px" height="20px"><a href="#">哈尔滨市</a></li>
+							<li><img src="img/5.png" style="width=20px" height="20px"><a href="#">沈阳市</a></li>
+							<li><img src="img/f70b9921e99172b2a294ae9ffd0f2406fef8072a.png" style="width=20px" height="20px"><a href="#">大连市</a></li>	
+						</ul>
+				    </div>
+			   </div> 
+			    <div class="shopping_cart">
+			    	<div class="wz-dot">
+			    	</div>
+			    	<a href="#"><img src="img/cart-icon.png"/><span>购物车</span></a><span id="countSpan">(0)</span>
+			    </div>
+			</div>
+		  </div>
+</nav>		
+<!-- <section>部分-->
+<section>
+  <div class="innersection">
+  	<h2>购物车</h2>
+    <div class="sectionone">
+  	  <table class="shoptable" border:"1">
+  		<!--<thead>-->
+  		<div class="border-tr">
+  			<tr class="border-trone" height="44px">
+  				<td><div class="radio"></div></td>
+  				<td width="172px">商品<td>
+  				<td width="193px"></td>
+  				<td width="210px">生日牌/数字蜡烛<td>
+  				<td width="152px">单价<td>
+  				<td width="135px">数量<td>
+  				<td width="125px">金额<td>
+  				<td width="168px">操作<td>
+  			</tr>
+  		</div>
+  		<!--</thead>-->
+  	  	<tbody>
+  			<tr class="border-trtwo" height="44px";border:"1">
+  				<td><div class="radio"></div></td>
+  				<td>
+  					<img src="img/red.jpg">
+  				<td>
+  				<td>
+  					<p class="redstar">红宝石星球<br/>尺寸：6寸<p>
+  					<p class="tableware">含餐具5套</p>
+  				</td>
+  			 		<td>
+  					<div class="edit">
+						<span id="editAndchoose">编辑或选择<img src="img/pull-down.png"></span>
+						<ul class="uls">
+							<li>编辑或选择</li>
+							<li>生日快乐</li>
+							<li>happy birthday</li>
+							<li><input type="text" placeholder="最多可写八个字" class="moreeight"><input type="button" value="确定" class="button"></li>
+						</ul>
+				   </div> 
+  				<td>
+  				<td class="price">￥318<td>
+  				<td><input  class="count" type="text" value="1"/><td>
+  				<td class="money">￥318<td>
+  				<td><img src="img/close-icon.png" style="width:16px;height:16px;cursor:pointer"><td>
+  			</tr>
+  		</tbody>
+  	</table>
+  </div>
+  <div class="sectiontwo">
+  	<div class="head">
+  		<p class="peijian">配件商品</p>
+  		<p class="peidan">配单商品</p>
+	</div>
+	<div class="shangpinlist">
+		<ul class="uls">
+			<li>
+				<img src="img/d5c8154844398114d8a044a6acd0ffbd1b96e5fd.jpg"><br/>
+				<p>Cutlies</p><br/>
+				<p class="red">餐具（5份装）</p><br/>
+			    <p>¥5.00</p>
+				<a href="#" class="buy"><img src="img/btn-cart-icon.png"><span>购买</span></a>
+			</li>
+			<li>
+				<img src="img/694075f2abd696765a610abb55347a909acdd578.jpg"><br/>
+				<p>Cankdle</p><br/>
+				<p class="red">数字蜡烛（下单请备注数字）</p><br/>
+				<p>¥5.00</p>
+				<a href="#" class="buy"><img src="img/btn-cart-icon.png"><span>购买</span></a>
+			</li>
+		</ul>
+	</div>
+	<div class="jiesuan">
+		<div class="jiesuantop">
+			<p>商品金额：￥318</p>
+			<p>优惠金额： ￥0</p>
+		</div>
+		<p class="heji">(订单可得积分318)合计： ￥318</p>
+		<a class="balance-desc">活动 ：感恩节全场满￥300立减￥30</a>
+		<button type="submit" class="calculate">去结算</button>
+	</div>
+</div>
+</div>
+</section>
+<!-- <footer>部分-->
+<footer>
+	    <div class="footerbox">
+	    	<div class="footer1">
+	    		<a href="#"><img src="img/LOGO-@2x.png"></a>
+	    		<p>食品经营许可证</p><br/>
+				<p>北京幸福快乐佳焙餐饮管理有限公司</p><br/>
+				<p>统一社会信用代码：91110108MA00AUEE7E</p>
+	    	</div>
+	    	<div class="footer2">
+	    		<div class="footer2box">
+					<a href="#" class="footer2a">联系我们<span>Contact us</span></a><img src="img/border_right.png"/>
+					<a href="#" class="footer2a">订购帮助<span>Purshasing Helper</span></a><img src="img/border_right.png"/>
+					<a href="#" class="footer2a">品牌故事<span>Brand story</span></a><img src="img/border_right.png"/>
+					<div href="#" class="footer2a qyZqq" style="cursor:pointer;position:relative;">企业专区<span style="position:static;">Enterprise Column</span>
+						<div id="footer2span">
+							<div class="qyFl">
+							</div>
+				    		<a href="#">企业福利</a><br/><a href="#">明星试吃员</a>
+				    	</div>	
+					</div>
+	    		</div>	
+	    	</div>
+	    	<div class="footer3">
+	    		 <div class="footer3one">
+	    		 	<img src="img/weibo-icon.png"/><div id="f3Span1"><img src="img/contact1.png"></div>
+	    		 </div>
+	    		<div class="footer3two">
+	    			<img src="img/wx-icon.png"/><div id="f3Span2"><img src="img/contact2.jpg"></div>
+	    		</div>
+	    		<div class="footer3three">
+	    			<img src="img/tmall-icon.png"/><div id="f3Span3"><img src="img/contact3.png"></div>
+	    		</div>
+	    		<p>预定电话：010-85888559 400-900-6177</p><br/>
+	    		<p>北京市朝阳区建国路89号院16号楼622号</p><br/>
+	    	    <p>官方微信：boncakekefu1</p><br/>
+	    		<p>请提前24小时预定</p>
+	    	</div>
+	    </div>
+</footer>
+</body>
+</html>
+<script>
+	function $(id){
+		return document.getElementById(id);
+	}
+	window.onload=function(){
+		 ajxd();
+	}
+	function ajxd(){
+		 let ajx=new XMLHttpRequest();
+		 ajx.open("get","php/getGoodsList.php",true);
+		 ajx.onreadystatechange=function(){
+		 	 if(ajx.readyState==4&&ajx.status==200){
+		 	 	  show(ajx.responseText);
+		 	 }
+		 }
+		 ajx.send();
+	}
+	function show(ojbb){
+		  console.log(ojbb);
+		  let ojb=JSON.parse(ojbb);
+		  for(let i in ojb){
+		  	 let im1=document.createElement("img");
+		  	 im1.className="im";
+		  	 im1.src=ojb[i]["goodsImg"];
+		  	 $("goods").appendChild(im1);
+		  	 let sp1=document.createElement("p");
+		  	 sp1.className="ip";
+		  	 sp1.innerHTML="商品号："+ojb[i]["goodsId"];
+              $("info").appendChild(sp1);
+              let sp2=document.createElement("p");
+		  	 sp2.className="ip";
+		  	 sp2.innerHTML="商品名："+ojb[i]["goodsName"];
+              $("info").appendChild(sp2);
+              let sp3=document.createElement("p");
+		  	 sp3.className="ip";
+		  	 sp3.innerHTML="型号："+ojb[i]["goodsName"];
+              $("info").appendChild(sp3);
+		  }
+	} 
+
+	
+</script>
+

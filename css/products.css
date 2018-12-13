@@ -1,0 +1,155 @@
+body,p,ul,ol,dl,dd,h1,h2,h3,h4,h5,h6,td,input,select,textarea,figure{
+	margin:0;
+	padding:0;
+}
+body{
+	font-family:"微软雅黑",Arial;
+	background: white;
+}
+a{
+	text-decoration:none;
+	color:black;
+}
+li{
+	list-style:none;
+}
+img{
+	border:none;
+}	
+html,body{
+	/*display:flex;*/
+	width:100%;
+	height:auto;
+}
+
+/*section部分*/
+section{
+	width:100%;
+	overflow:hidden;
+	margin-top:92px;
+}
+section .section_one{
+	width:1173px;
+	height:73px;
+    background-color:white;
+    margin:0 auto;
+    margin-top:80px;
+}
+section .section_one .allPd{
+	width:101px;
+	height:31px;
+	color: #f3f2f1;
+    background-color:#333333;
+    line-height:31px;
+    vertical-align:middle;
+    text-align: center;
+    font-size: 16px;
+    border-radius:15px;
+    display:inline-block;
+}
+section .section_one .allSe{
+	width:90px;
+	height:31px;
+	color:#333333;
+    background-color:#f3f2f1;
+    line-height:31px;
+    vertical-align:middle;
+    text-align: center;
+    font-size: 16px;
+    padding:0 10px;
+    cursor:pointer;
+    display:inline-block;
+    border-radius:15px;
+    margin-left:28px;
+}
+section .section_one .allSe img{
+	margin-left:8px;
+}
+section .section_one .search{
+	display: inline-block;
+	float:right;
+	background-color:#f3f2f1;
+	border-radius:12px;
+}
+section .section_one .search .inputkey{
+	width: 150px;
+    height: 25px;
+    vertical-align: middle;
+    padding: 0 9px;
+    font-size: 14px;
+    border: none;
+    background-color: transparent;
+    box-sizing:border-box;
+}
+section .section_one .search .searchkey{
+	width:14px;
+	height:15px;
+	padding:5px;
+	padding-right:15px;
+	text-indent:1000px;
+	background-image:url(../img/search-icon.png);
+	background-repeat:no-repeat;
+	background-position:0px 0px;
+	border:none;
+	vertical-align:middle;
+	background-color:#f3f2f1;
+    cursor: pointer;
+}
+section .productshow{
+	width:1173px;
+	/*overflow:hidden;*/
+	margin:0 auto;
+}
+section .productshow li{
+	font-family: "Microsoft YaHei", PingFangSC-Regular, sans-serif;
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+	width:267px;
+	height:380px;
+	border:1px solid lightgray;
+	cursor: pointer;
+    transition:all 0.6s;
+    overflow:hidden;
+    float:left;
+    margin-right:30px;
+    margin-bottom:20px;
+}
+section .productshow li:hover{
+	transform:Scale(1.05);
+}
+section .productshow li img{
+	width:265px;
+	height:265px;
+}
+section .productshow .uls li:nth-child(4n){
+	margin-right:0px;
+}
+
+section .productshow li p{
+	font-size: 16px;
+	margin-left:21px;
+	line-height:10px;
+}
+section .productshow li .red{
+	color:#666666;
+	font-size:14px;
+	margin-top:-2px;
+}
+section .productshow li .buy{
+	display:inline-block;
+	width:72px;
+	height:26px;
+	background-color:#333333;
+	color:white;
+	font-size:17px;
+	text-align:center;
+	float:right;
+	margin-right:20px;
+}
+section .productshow li .buy img{
+	width:18px;
+	height:16px;
+	margin-right:5px;
+}
+

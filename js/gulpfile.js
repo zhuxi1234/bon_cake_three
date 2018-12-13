@@ -1,0 +1,26 @@
+var gulp = require("gulp");
+gulp.task("copy-html",function(){
+	//gulp.src("index.html").pipe(gulp.dest("dist"));
+	gulp.src("*.html")
+	.pipe(gulp.dest("D:\\phpStudy\\WWW\\LongChamp"));
+});
+gulp.task('copy-images',function(){
+	gulp.src('img/*.{jpg,png,tmp,gif}')
+	.pipe(gulp.dest("D:\\phpStudy\\WWW\\LongChamp\\img"));
+})
+gulp.task("copy-css",function(){
+	gulp.src("css/*.css")
+	.pipe(gulp.dest("D:\\phpStudy\\WWW\\LongChamp\\css"));
+});
+gulp.task("copy-js",function(){
+	gulp.src("js/*.js")
+	.pipe(gulp.dest("D:\\phpStudy\\WWW\\LongChamp\\js"));
+});
+gulp.task("copy-php",function(){
+	gulp.src("php/*.php")
+	.pipe(gulp.dest("D:\\phpStudy\\WWW\\LongChamp\\php"));
+});
+gulp.task("watch",function(){
+	gulp.watch("shopping.html",["copy-html"]);
+	gulp.watch('img/*.{jpg,png,tmp,gif}',["copy-images"]);
+});

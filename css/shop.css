@@ -1,0 +1,289 @@
+body,p,ul,ol,dl,dd,h1,h2,h3,h4,h5,h6,td,input,select,textarea,figure{
+  font-family: "Microsoft YaHei", PingFangSC-Regular, sans-serif;
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+}
+body{
+	/*font-family:"微软雅黑",Arial;*/
+	background: white;
+}
+a{
+	text-decoration:none;
+	color:black;
+}
+li{
+	list-style:none;
+}
+img{
+	border:none;
+}	
+html,body{
+	width:100%;
+	height:auto;
+}
+
+/*section部分*/
+section{
+	width:100%;
+	height:auto;
+	margin:0 auto;
+}
+.innersection{
+	width:1173px;
+	height:1066px;
+	margin:92px auto 0px;
+}
+.innersection h2{
+   font-size: 15px;
+   color: #333333;
+   padding-top:85px;
+   font-weight:200;
+   padding-bottom:85px;
+  }
+.innersection .radio{
+	width:18px;
+	height:18px;
+	border-radius:50%;
+	border:1px solid #999999;
+	/*border: 6px solid #d3b145;*/
+}
+.shoptable thead{
+	width:1173px;
+	height:44px;
+	text-align:center;
+	}
+.shoptable tbody{
+	text-align:center;
+	}
+.shoptable tr .border-trone{
+	width:1173px;
+	height:44px;
+	border-bottom: 1px solid #999999;
+}
+.border-tr{
+	border-bottom: 1px solid #999999;
+	background:red;
+	width:1173px;
+/*	height:1px;*/
+}
+.border-trtwo{
+	/*display: table-row;
+	border-collapse: collapse;
+    border-color: inherit;*/
+	width:1173px;
+	height:44px;
+	border-top: 1px solid lightgray;
+/*	background:red;*/
+}
+.shoptable .redstar{
+	color: #333333;
+	line-height:35px;
+}
+.shoptable .tableware{
+	color: #666666;
+	}
+.shoptable .edit{
+	 position:relative;
+}
+.edit #editAndchoose{
+	display:inline-block;
+	width:200px;
+	height:32px;
+	line-height: 32px;
+	text-align:left;
+	padding-left: 9px;
+	border-radius: 6px;
+	border: solid 1px #999999;
+	font-size: 15px;
+  color: #333333;
+  box-sizing:border-box;
+}
+.edit #editAndchoose img{
+	float:right;
+	padding-right:9px;
+	padding-top:12px;
+}
+.edit .uls{
+	width:199px;
+	position:absolute;
+	top:;
+	left:5px;
+	border: solid 1px #999999;
+	display:none;
+}
+.edit .uls li{
+	text-align: left;
+	font-size:15px;
+	padding-left: 9px;
+	height:32px;
+	vertical-align:middle;
+	line-height:32px;
+}
+.edit .moreeight{
+	width:133px;
+	height:20px;
+	font-size: 15px;
+}
+.edit .button{
+	display: inline-block;
+  width: 45px;
+  height: 24px;
+  color: #ffffff;
+  background-color: #d3b145;
+  font-size: 15px;
+  border:none;
+  box-sizing:border-box;
+  margin-left:6px;
+}
+.shoptable  .price{
+	font-size: 15px;
+  color: #d3b145;
+}
+ .shoptable .count{
+ 	display:block;
+	width: 120px;
+  height: 26px;
+  font-size: 15px;
+  text-align:center;
+  box-sizing:border-box;
+  background:url(../img/double-icon.png) right no-repeat;
+  border:none;
+  border:1px solid #999999;
+  border-radius:3px;
+}
+ .money{
+	color: #d33535;
+	font-size: 15px;
+}
+.tdimg{
+	text-align:center;
+	}
+.sectionone{
+	margin-bottom:25px;
+}
+.sectiontwo{
+	border-top:1px solid #c9c9c9;;
+	width:1173px;
+	height:684px;
+	padding-top:50px;
+}
+.sectiontwo .head{
+	width:569px;
+	height:25px;
+	border-bottom:1px solid #999999;
+} 
+.sectiontwo .peijian{
+	width:84px;
+	height:24px;
+	text-align:center;
+	display:inline-block;
+	margin-right:30px;
+	cursor: pointer;
+	vertical-align:middle;
+	border-bottom:2px solid black;
+}
+/*.sectiontwo .peijian:hover{
+	color:#999999;
+	border-bottom:2px solid black;
+}*/
+.sectiontwo .peidan{
+	width:84px;
+	display:inline-block;
+	color: #999999;
+  cursor: pointer;
+}
+section .shangpinlist{
+	margin-top:80px;
+}
+section .shangpinlist li{
+	font-family: "Microsoft YaHei", PingFangSC-Regular, sans-serif;
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+	width:267px;
+	height:380px;
+	border:1px solid lightgray;
+	cursor: pointer;
+  /*transition:all 0.6s;*/
+  overflow:hidden;
+  float:left;
+  margin-right:30px;
+  margin-bottom:20px;
+}
+section .shangpinlist li img{
+	width:265px;
+	height:265px;
+}
+section .shangpinlist .uls li:nth-child(4n){
+	margin-right:0px;
+}
+
+section .shangpinlist li p{
+	font-size: 16px;
+	margin-left:21px;
+	line-height:10px;
+}
+section .shangpinlist li .red{
+	color:#666666;
+	font-size:14px;
+	margin-top:-2px;
+}
+section .shangpinlist li .buy{
+	display:inline-block;
+	width:72px;
+	height:26px;
+	background-color:#333333;
+	color:white;
+	font-size:17px;
+	text-align:center;
+	float:right;
+	margin-right:20px;
+}
+section .shangpinlist li .buy img{
+	width:18px;
+	height:16px;
+	margin-right:5px;
+}
+section .jiesuan{
+	width:458px;
+	height:259px;
+	float:right;
+	text-align:right;
+}
+section .jiesuan .jiesuantop{
+	font-size: 16px;
+	color: #333333;
+	line-height:40px;
+	border-bottom:1px solid #999999;
+}	
+section .jiesuan .heji{
+	font-size: 16px;
+  color: #333333;
+  margin-top:25px;
+  margin-bottom:15px;
+}
+section .jiesuan .balance-desc{
+	font-size: 14px;
+  color: #d3b145;
+  display:block;
+  cursor: pointer;
+ }
+section .jiesuan .calculate{
+	display:inline-block;
+	/*text-indent:-1000px;*/
+	width:116px;
+	height:26px;
+	/*float:right;*/
+	font-size: 14px;
+	margin-top:116px;
+	border:none;
+	border:1px solid black;
+  color: #ffffff;
+  background-color: #333333;
+  cursor: pointer;
+}
+/*<footer部分>*/
+.footerbox{
+	border-top:1px solid #999999;
+}

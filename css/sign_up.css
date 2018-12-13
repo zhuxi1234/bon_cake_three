@@ -1,0 +1,197 @@
+body,p,ul,ol,dl,dd,h1,h2,h3,h4,h5,h6,td,input,select,textarea,figure{
+  font-family: "Microsoft YaHei", PingFangSC-Regular, sans-serif;
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+}
+body{
+	font-family:"微软雅黑",Arial;
+	background: white;
+}
+a{
+	text-decoration:none;
+	color:black;
+}
+li{
+	list-style:none;
+}
+img{
+	border:none;
+}	
+html,body{
+	width:100%;
+	height:auto;
+}
+
+/*section部分*/
+section{
+	padding-top:92px;
+	width:100%;
+	height:100%;
+}
+section .innersection{
+	width:1346px;
+	height:653px;
+	margin:0 auto;
+	position:relative;
+}
+section .bg_one{
+	/*float:left;*/
+	display:inline-block;
+}
+section .bg_one img{
+	width:520px;
+	height:194px;
+	margin:127px 0px 49px 110px;
+}
+section .bg_one p{
+  margin-left: 110px;
+	font-size: 23px;
+	color: #d3b145;
+}
+section .bg_two{
+	width:357px;
+	height:653px;
+	}
+section .square-bg{
+	float:left;
+	display:inline-block;
+	position: absolute;
+  top: 0;
+	right: 491px;
+	width: 0;
+	height:0px;
+	border-bottom: 653px solid #d3b145;
+	border-left: 357px solid transparent;
+}
+section .yellow-bg{
+	position: absolute;
+  top: 0;
+  right: 0;
+	width:491px;
+	height:653px;
+	background:#d3b145;
+}
+section .register-form{
+	width:344px;
+	height:415px;
+	background:white;
+	margin-top:130px;
+  margin-left:32px;
+  overflow:hidden;
+}
+section .register-form form{
+  padding-top:30px;
+	margin-left:40px;;
+}
+section .register-form .login_titletwo{
+	margin-top:-10px;
+	margin-left:-30px;
+	text-align:center;
+	color: #999999;
+	cursor: pointer;
+	margin-bottom:-5px;
+}
+section .register-form input{
+	width: 253px;
+	height: 31px;
+	line-height:31px;
+	padding: 0 19px;
+	border-radius: 5px;
+	font-size:12px;
+	background-color: #f8f8f8;
+	border: solid 1px #e3e3e3;
+	color: #808080;
+	box-sizing: border-box;
+	margin-bottom:15px;
+   }
+  section .register-form #invite{
+   	display:none;
+   }
+/*section .register-form .slidebox{
+	width: 253px;
+	height: 31px;
+	line-height:31px;
+	padding: 0 19px;
+	border-radius: 5px;
+	font-size:12px;
+	background-color:lightgray;
+	border: solid 1px #e3e3e3;
+	color: white;
+	box-sizing: border-box;
+	position:relative;
+	text-indent:50px;
+}*/
+/*section .register-form .slidebox #slideblock{
+	width:43px;
+	height:28px;
+	vertical-align:middle;
+	line-height:27px;
+	position:absolute;
+	left:0;
+	top:0;
+}*/
+section .register-form .verify_input{
+	margin-top:-5px;
+	width:154px;
+    height:31px;
+    padding-left:15px;
+    font-size:13px;
+    vertical-align: top;
+    border-radius:5px;
+    border: solid 1px #e3e3e3;
+    background-color: #f8f8f8;
+    box-sizing: border-box;
+    }
+ section .register-form .verify_code{
+	display:inline-block;
+	width:90px;
+  height:31px;
+	line-height:31px;
+  margin-left: 14px;
+  display:inline-block;
+  vertical-align: middle;
+  font-size:13px;
+  color: #ffffff;
+  border:solid 1px #e3e3e3;
+  background-color: #d3b145;
+  text-align: center;
+  box-sizing: border-box;
+  margin-top:-5px;  
+}
+section .register-form #radiobox{
+	width:13px;
+	height:13px;
+/*	vertical-align:middle;*/
+  margin-right:5px;
+ /* display:block;*/
+}
+section .register-form span{
+	display: inline-block;
+  vertical-align: middle;
+	font-size:12px;
+	color: #464646;
+	}
+section .register-form #goregister{
+	width: 253px;
+  height: 31px;
+  margin-top:5px;
+  font-size: 13px;
+  color: #ffffff;
+  background-color: #333333;
+  cursor: pointer;
+  border:none;
+}
+section .register-form #checkbox{
+	width:13px;
+	height:13px;
+	display: inline-block;
+	margin-top:18px;
+  vertical-align: middle;
+}
+section .register-form #readAndagree{
+	display: inline-block;
+  vertical-align: middle;
+  font-size: 12px;
+  color: #464646;
+}
