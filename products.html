@@ -326,9 +326,44 @@
 </footer>
 	</body>
 </html>
-<script type="text/javascript" src="js/tools.js"></script>
-<!--<script type="text/javascript" src="js/tools2.0.js" ></script>
-<script type="text/javascript" src="js/move1808.js" ></script>
-<script type="text/javascript" src="js/jquery-1.8.3.js"></script>-->
+<!--<script type="text/javascript" src="js/tools.js"></script>
+<script type="text/javascript" src="js/tools2.0.js" ></script>
+<script type="text/javascript" src="js/move1808.js" ></script>-->
+<script type="text/javascript" src="js/jquery-1.8.3.js"></script>
 <script type="text/javascript">
+//	function $(str){//#box .cls  p
+//	if(str.charAt(0)=="#"){
+//		return document.getElementById(str.substring(1));
+//	}else if(str.charAt(0)=="."){
+//		return document.getElementsByClassName(str.substring(1));
+//	}else{
+//		return document.getElementsByTagName(str);
+//	}
+//}
+	window.onload=function(){
+		ajxd();
+	}
+	function ajxd(){
+		 let ajx=new XMLHttpRequest();
+		 ajx.open("get","php/getGoodsList.php",true);
+		 ajx.onreadystatechange=function(){
+		 	 if(ajx.readyState==4&&ajx.status==200){
+		 	 	  show(ajx.responseText);
+		 	 	  
+		 	 }
+		 }
+		 ajx.send();
+	}
+	
+	function show(ojbb){
+		let ojb=JSON.parse(ojbb);
+//		console.log(ojbb);
+		for(let i in ojb){
+		let str="<li><img src='"+ojb[i].goodsImg+"'><br/><p>"+ojb[i].goodsName+"</p><br/><p class='red'>"+ojb[i].goodsDesc+"</p><br/><p>"+ojb[i].beiyong2+"</p><a href='#' class='buy'><img src='img/btn-cart-icon.png'><span>购买</span></a></li>"
+//		let str="<li><img src="+ojb[i].goodsImg+"></li>"
+		   $(".productshow").append(str);
+//		   $(".uls").innerHTML+=str;
+		}
+	}
+				
 </script>

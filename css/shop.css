@@ -31,7 +31,7 @@ section{
 }
 .innersection{
 	width:1173px;
-	height:1066px;
+	height:auto;
 	margin:92px auto 0px;
 }
 .innersection h2{
@@ -48,6 +48,14 @@ section{
 	border:1px solid #999999;
 	/*border: 6px solid #d3b145;*/
 }
+.sectionone{
+	width:1173px;
+	height:100%;
+}
+.shoptable{
+	width:1173px;
+	height:100%;
+}
 .shoptable thead{
 	width:1173px;
 	height:44px;
@@ -56,6 +64,10 @@ section{
 .shoptable tbody{
 	text-align:center;
 	}
+	/*.bigbox{
+	width:1173px;
+	height:auto;
+	}*/
 .shoptable tr .border-trone{
 	width:1173px;
 	height:44px;
@@ -70,9 +82,9 @@ section{
 .border-trtwo{
 	/*display: table-row;
 	border-collapse: collapse;
-    border-color: inherit;*/
+  border-color: inherit;*/
 	width:1173px;
-	height:44px;
+	height:auto;
 	border-top: 1px solid lightgray;
 /*	background:red;*/
 }
@@ -140,8 +152,8 @@ section{
 	font-size: 15px;
   color: #d3b145;
 }
- .shoptable .count{
- 	display:block;
+ .count{
+ 	display:inline-block;
 	width: 120px;
   height: 26px;
   font-size: 15px;

@@ -15,8 +15,8 @@
 		//3.1 查询
 		$sqlstr="select * from bon_caket where vipTel='$vipTel'";
 		$result = mysql_query($sqlstr,$conn);//执行查询SQL语句，返回值是表格
-		$rows = mysql_num_rows($result);//返回$result表格有几行。
-		if($rows==0){
+//		$rows = mysql_num_rows($result);//返回$result表格有几行。
+		if(mysql_num_rows($result)==0){
 			//3.2保存
 			$sql="insert into bon_caket(vipTel,vippw)
 						values('$vipTel','$vippw')";
@@ -25,12 +25,12 @@
 			mysql_close($conn);
 			if($result==1){			
 			//三、响应
-			echo "1";
+			echo"1";
 		}else{
-			echo "0";
+			echo"0";
 		}
 	}else{
-		echo "1";
+		echo"1";
 	}
 }
 ?>

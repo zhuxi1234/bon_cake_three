@@ -97,6 +97,7 @@ section .section_one .search .searchkey{
 }
 section .productshow{
 	width:1173px;
+	height:auto;
 	/*overflow:hidden;*/
 	margin:0 auto;
 }

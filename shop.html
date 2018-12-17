@@ -53,22 +53,24 @@
   		<div class="border-tr">
   			<tr class="border-trone" height="44px">
   				<td><div class="radio"></div></td>
-  				<td width="172px">商品<td>
+  				<td width="172px">商品</td>
   				<td width="193px"></td>
-  				<td width="210px">生日牌/数字蜡烛<td>
-  				<td width="152px">单价<td>
-  				<td width="135px">数量<td>
-  				<td width="125px">金额<td>
-  				<td width="168px">操作<td>
+  				<td width="210px">生日牌/数字蜡烛</td>
+  				<td width="152px">单价</td>
+  				<td width="135px">数量</td>
+  				<td width="125px">金额</td>
+  				<td width="168px">操作</td>
   			</tr>
   		</div>
   		<!--</thead>-->
-  	  	<tbody>
-  			<tr class="border-trtwo" height="44px";border:"1">
-  				<td><div class="radio"></div></td>
+  	  	<tbody class="tBody">
+  			<!--<tr class="border-trtwo" height="44px";border:"1">
+  		    <!--<div class="bigbox">-->
+  			<!--<span class="box">-->
+  				<!--<td><div class="radio"></div></td>
   				<td>
-  					<img src="img/red.jpg">
-  				<td>
+  					<img src="img/red.jpg" class="im">
+  				</td>
   				<td>
   					<p class="redstar">红宝石星球<br/>尺寸：6寸<p>
   					<p class="tableware">含餐具5套</p>
@@ -83,12 +85,14 @@
 							<li><input type="text" placeholder="最多可写八个字" class="moreeight"><input type="button" value="确定" class="button"></li>
 						</ul>
 				   </div> 
-  				<td>
-  				<td class="price">￥318<td>
-  				<td><input  class="count" type="text" value="1"/><td>
-  				<td class="money">￥318<td>
-  				<td><img src="img/close-icon.png" style="width:16px;height:16px;cursor:pointer"><td>
-  			</tr>
+  				</td>
+  				<td><p class="price">￥318</p></td>
+  				<td><input  class="count" type="text" value="1"/></td>
+  				<td><p class="money">￥318</p></td>
+  				<td><img src="img/close-icon.png" style="width:16px;height:16px;cursor:pointer" class="im_two"/></td>-->
+  				<!--</span>-->
+  			<!--</div>-->
+  			<!--</tr>-->
   		</tbody>
   	</table>
   </div>
@@ -169,12 +173,21 @@
 </footer>
 </body>
 </html>
+<script type="text/javascript" src="js/jquery-1.8.3.js"></script>
 <script>
-	function $(id){
-		return document.getElementById(id);
-	}
+//	function $(str){//#box .cls  p
+//	if(str.charAt(0)=="#"){
+//		return document.getElementById(str.substring(1));
+//	}else if(str.charAt(0)=="."){
+//		return document.getElementsByClassName(str.substring(1));
+//	}else{
+//		return document.getElementsByTagName(str);
+//	}
+//}
 	window.onload=function(){
 		 ajxd();
+		 deleteajxa();
+		 updatecountajxa();
 	}
 	function ajxd(){
 		 let ajx=new XMLHttpRequest();
@@ -182,6 +195,7 @@
 		 ajx.onreadystatechange=function(){
 		 	 if(ajx.readyState==4&&ajx.status==200){
 		 	 	  show(ajx.responseText);
+		 	 	  console.log("添加成功");
 		 	 }
 		 }
 		 ajx.send();
@@ -190,25 +204,33 @@
 		  console.log(ojbb);
 		  let ojb=JSON.parse(ojbb);
 		  for(let i in ojb){
-		  	 let im1=document.createElement("img");
-		  	 im1.className="im";
-		  	 im1.src=ojb[i]["goodsImg"];
-		  	 $("goods").appendChild(im1);
-		  	 let sp1=document.createElement("p");
-		  	 sp1.className="ip";
-		  	 sp1.innerHTML="商品号："+ojb[i]["goodsId"];
-              $("info").appendChild(sp1);
-              let sp2=document.createElement("p");
-		  	 sp2.className="ip";
-		  	 sp2.innerHTML="商品名："+ojb[i]["goodsName"];
-              $("info").appendChild(sp2);
-              let sp3=document.createElement("p");
-		  	 sp3.className="ip";
-		  	 sp3.innerHTML="型号："+ojb[i]["goodsName"];
-              $("info").appendChild(sp3);
+			let str="<tr class='border-trtwo' height='44px';border:'1'><td><div class='radio'></div></td><td><img src='"+ojb[i].goodsImg+"' class='im' style='width:140px;height:140px'></td><td><p class='redstar' style='width:193px;margin:0px 20px 0px 20px'>"+ojb[i].goodsName+"<br/>尺寸：6寸<p><p class='tableware' style='width:193px;margin:0px 20px 0px 20px'>含餐具5套</p></td><td style='width:210px'><div class='edit'><span id='editAndchoose'>编辑或选择<img src='img/pull-down.png'></span><ul class='uls'><li>编辑或选择</li><li>生日快乐</li><li>happy birthday</li><li><input type='text' placeholder='最多可写八个字' class='moreeight'><input type='button' value='确定' class='button'></li></ul></div></td><td style='width:152px'><p class='price'>"+ojb[i].beiyong2+"</p></td><td style='width:135px'><input  class='count' type='text' value='"+ojb[i].goodsCount+"'/></td><td style='width:125px'><p class='money'>￥"+ojb[i].goodsPrice+"</p></td><td style='width:168px'><img src='img/close-icon.png' style='width:16px;height:16px;cursor:pointer' class='im_two'/></td></tr>"
+		  	$(".shoptable").append(str);
 		  }
 	} 
-
 	
+    function deleteajxa(){
+    	let xhr=new XMLHttpRequest();
+    	xhr.open("request","php/deleteGoods.php?"+"goodsId="+$("#goodsId").value,true);
+    	xhr.onreadystatechange=function(){
+    		if(xhr.readyState==4&&xhr.status==200){
+    			console.log(xhr.responseText);
+    			console.log("删除成功");
+    		}
+    	}
+    	xhr.send();
+    }
+    
+    function  updatecountajxa(){
+    	let xhr_two=new XMLHttpRequest();
+    	xhr_two.open("request","php/updateGoodsCount.php?"+"goodsId="+$("#goodsId").value+"goodsCount="+$("#goodsCount").value,true);
+    	xhr_two.onreadystatechange=function(){
+    		if(xhr_two.readyState==4&&xhr_two.status==200){
+    			console.log(xhr_two.responseText);
+    			console.log("更新成功");
+    		}
+    	}
+    	xhr_two.send();
+    }
 </script>
 

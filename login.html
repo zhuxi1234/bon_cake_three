@@ -174,8 +174,8 @@ function A(str){//#box .cls  p
 	A("#register-form").style.display="block";
 	}
 </script>
-<!--<script type="text/javascript" src="js/cookieTools.js" ></script>-->
-<!--<script type="text/javascript">
+<script type="text/javascript" src="js/cookieTools.js" ></script>
+<script type="text/javascript">
 	function B(str){//#box .cls  p
 	if(str.charAt(0)=="#"){
 		return document.getElementById(str.substring(1));
@@ -188,50 +188,21 @@ function A(str){//#box .cls  p
 window.onload = function(){	
 	B("#loginbtn").onclick = function(){
 		let xhr = new XMLHttpRequest();
-//		let sendStr="vipTel="+B("#vipTel").value+"&vippw="+B("#vippw").value;
-		xhr.open("get","login.php?vipTel="+B("#vipTel").value+"&vippw="+B("#vippw").value,true);
+		let sendStr="vipTel="+B("#vipTel").value+"&vippw="+B("#vippw").value;
+		xhr.open("get","php/login.php?"+sendStr,true);
 		xhr.onreadystatechange = function(){
 			if(xhr.readyState==4 && xhr.status==200){
-				if(xhr.responseText=="1"){				
-//					B("#spanError").style.display = "block";
-					alert("success");
+				if(xhr.responseText=="0"){				
+					B("#spanError").style.display = "block";
+//					alert("success");
 				}else{
-					//保存cookie
-//					addCookie("vipTel",B("#vipTel").value,7);
-//					location.href = "index.html";
-					alert("defale");
+//					保存cookie
+					addCookie("vipTel",B("#vipTel").value,7);
+					location.href = "http://10.35.161.59/bon_cake/index.html";
 				}
 			} 
 		}		
 		xhr.send();
 	}
-}	-->
-
-<!--//$(function(){
-//	$("#loginbtn").click(function(){
-//		//获取值
-//		console.log("11")
-//		let vipTel = $("#vipTel").val();
-//		let vippw = $("#vippw").val();
-//		let objSend = {
-//			vipTel:vipTel,
-//			vippw:vippw
-//		};
-//		console.log(objSend)
-//		$.ajax({
-//			type:"post",
-//			url:"login.php",
-//			async:true,
-//			data:objSend,
-//			success:function(){
-//				if(data==1){
-//					alert("success")
-//				}
-//				else{
-//					alert("default")
-//				}
-//			}
-//		})
-//	})
-//})-->
+}	
 </script>
